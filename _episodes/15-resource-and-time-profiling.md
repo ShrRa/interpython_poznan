@@ -70,12 +70,42 @@ like timing, debugging, profiling, or interacting with the system, e.g. executin
 > 
 {: .callout}
 
+Here is a short list of the most useful magics:
+- `%magic`: prints information about magics system
+- `%lsmagic`: lists all magic commands in a convenient form
+- `%quickref`: another helper function that shows references for the magic commands
+- `%time`, `%timeit` and `%%timeit`: measure the execution time of the code. 
+- `%cd`, `%ls`, `%pwd` and other console commands: executes terminal commands
+- `%run`: executes another '.ipynb' or '.py' file from within the current notebook
+- `%who`: lists the defined variables. It is possible to list only variables of a certain type, e.g. `%who string`.
+
 There are plenty Magics cheatsheets online, however, the easiest way to look up what kinds of comands are there is to use Magics itself:
 - `%lsmagic` - prints a list of all Magics available;
 - `%quickref` - prints a reference card on the available Magic commands.
 
 ![`%lsmagic` prints a list of all Magics](../fig/33_magics_1.png){: .image-with-shadow width="600px"}
 ![`%quickref` prints a reference card on Magic commands](../fig/33_magics_2.png){: .image-with-shadow width="600px"}
+
+
+> ## Try out different magics
+> Try several different magic commands, such as `%lsmagic`, `%pwd` and `%who`.
+> Use `%who` command to get the list of `dict` variables (pay attention, that if you use `%who` command
+> without specifying the type of the variable, it will also include the packages that you imported in the notebook).
+{: .challenge}
+
+Apart from the built-in magics, there are many more that you can install additionally. It is also possible to
+develop your own magic commands.
+
+> ## Installing packages from Jupyter notebook interface or Jupyter console session
+> Since magics allow us to execute terminal commands, there is a way to install Python packages right
+> from the Jupyter interface. We can run `%pip3 install astropy` right in a Jupyter cell.
+> This is a standard way of installing packages in cloud Jupyter Notebook services, such as Google Colab or
+> the Notebook aspect of Rubin Science Platform.
+> Pay attention, though, that another common way of doing this, using `!` instead of `%` before the installation command,
+> is in general not safe and can lead to the dependencies issues due to the particularities of how OS and Jupyter kernels interact.
+> You can still see it often, since magic command for `pip` appeared only in the later versions of IPython.
+{: .callout}
+
 
 ## Time Profiling with Magics
 
