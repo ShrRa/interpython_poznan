@@ -1,8 +1,8 @@
 ---
 title: "Best practices for Jupyter"
 start: false
-teaching: 15
-exercises: 10
+teaching: 10
+exercises: 5
 questions:
 - "How to avoid chaos when writing code in Notebooks?"
 - "What is the workflow when using Jupyter Lab for software development?"

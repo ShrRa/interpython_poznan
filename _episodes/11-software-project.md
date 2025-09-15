@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Our Software Project"
-teaching: 20
-exercises: 10
+teaching: 10
+exercises: 5
 questions:
 - "What is the design architecture of our example software project?"
 - "Why is splitting code into smaller functional units (modules) good when designing software?"
@@ -231,27 +231,8 @@ are bigger modules that contain several smaller sub-modules.
 Another example of modules are classes in object-oriented programming languages.
 
 There are various software architectures around defining different ways of
-dividing the code into smaller modules with well defined roles, for example:
-
-- [Model–View–Controller (MVC) architecture](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller),
-  which we will look into in detail and use for our software project,
-- [Service-oriented architecture (SOA)](https://en.wikipedia.org/wiki/Service-oriented_architecture),
-  which separates code into distinct services,
-  accessible over a network by consumers (users or other services)
-  that communicate with each other by passing data in a well-defined, shared format (protocol),
-- [Client-server architecture](https://en.wikipedia.org/wiki/Client%E2%80%93server_model),
-  where clients request content or service from a server,
-  initiating communication sessions with servers,
-  which await incoming requests (e.g. email, network printing, the Internet),
-- [Multilayer architecture](https://en.wikipedia.org/wiki/Multitier_architecture),
-  is a type of architecture in which presentation,
-  application processing
-  and data management functions
-  are split into distinct layers and may even be physically separated to run on separate machines -
-  some more detail on this later in the course.
-
-### Model-View-Controller (MVC) Architecture
-MVC architecture divides the related program logic
+dividing the code into smaller modules with well defined roles. In this project, we use 
+Model-View-Controller (MVC) Architecture that divides the program logic
 into three interconnected modules:
 
 - **Model** (data)

@@ -1,8 +1,8 @@
 ---
 title: "Integrated Software Development Environments"
 start: false
-teaching: 25
-exercises: 15
+teaching: 15
+exercises: 5
 questions:
 - "What are Integrated Development Environments (IDEs)?"
 - "What are the advantages of using IDEs for software development?"

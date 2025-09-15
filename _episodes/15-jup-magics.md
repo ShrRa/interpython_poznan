@@ -1,5 +1,5 @@
 ---
-title: "Measuring time and computational resources required by the software"
+title: "Jupyter Magics and Resource Profiling"
 start: false
 teaching: 15
 exercises: 10

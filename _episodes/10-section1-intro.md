@@ -2,7 +2,7 @@
 title: "Section 1: Setting Up Environment For Collaborative Code Development"
 colour: "#fafac8"
 start: true
-teaching: 10
+teaching: 5
 exercises: 0
 questions:
 - "What tools are needed to collaborate on code development effectively?"

@@ -4,7 +4,7 @@ title: "Wrap-up"
 start: true
 type: "wrap-up"
 colour: "#FBED65"
-teaching: 15
+teaching: 5
 exercises: 0
 questions:
 - "Looking back at what was covered and how different pieces fit together"
