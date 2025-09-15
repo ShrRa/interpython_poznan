@@ -12,6 +12,77 @@ keypoints:
 - "Use linting tools in the IDE or on the command line (or via continuous integration) to automatically check your code style."
 ---
 
+> *"Any fool can write code that a computer can understand.
+> Good programmers write code that humans can understand."* -
+> [Martin Fowler](https://en.wikiquote.org/wiki/Martin_Fowler),
+> British software engineer, author and international speaker on software development
+
+## Python Coding Style Guide
+One of the most important things we can do to make sure our code is readable by others
+(and ourselves a few months down the line)
+is to make sure that it is descriptive,
+cleanly and consistently formatted
+and uses sensible, descriptive names for variable, function and module names.
+In order to help us format our code, we generally follow guidelines known as a **style guide**.
+A style guide is a set of conventions that we agree upon
+with our colleagues or community,
+to ensure that everyone contributing to the same project is
+producing code which looks similar in style.
+While a group of developers may choose to write
+and agree upon a new style guide unique to each project,
+in practice many programming languages have a single style guide
+which is adopted almost universally by the communities around the world.
+In Python, although we do have a choice of style guides available,
+the [PEP 8](https://www.python.org/dev/peps/pep-0008/) style guide is most commonly used.
+PEP here stands for Python Enhancement Proposals;
+PEPs are design documents for the Python community,
+typically specifications or conventions for how to do something in Python,
+a description of a new feature in Python, etc.
+
+>## Style consistency
+> One of the
+> [key insights from Guido van Rossum](https://www.python.org/dev/peps/pep-0008/#a-foolish-consistency-is-the-hobgoblin-of-little-minds),
+> one of the PEP 8 authors,
+> is that code is read much more often than it is written.
+> Style guidelines are intended to improve the readability of code
+> and make it consistent across the wide spectrum of Python code.
+> Consistency with the style guide is important.
+> Consistency within a project is more important.
+> Consistency within one module or function is the most important.
+> However, know when to be inconsistent -
+> sometimes style guide recommendations are just not applicable.
+> When in doubt, use your best judgment.
+> Look at other examples and decide what looks best. And don't hesitate to ask!
+>
+{: .callout}
+
+As we have already covered in the
+[episode on Jupyter Lab IDE](../13-ides/index.html),
+Jupyter Lab highlights the language constructs (reserved words)
+and syntax errors to help us with coding.
+
+A full list of style guidelines for this style is available from the
+[PEP 8 website](https://www.python.org/dev/peps/pep-0008/). The recommendations regulate
+indentations, maximum line length, naming of variables, functions and classes, and so on.
+
+> ## Function, Variable, Class, Module, Package Naming in Python
+>
+> - Function and variable names should use lower_case_with_underscores
+> - Avoid single character names in almost all instances.
+> - Variable names should tell you what they store, and not just the type (e.g. `source_id` is better than `string`)
+> - Function names should tell you what the function does.
+> - Class names should use the CapitalisedWords convention.
+> - Modules should have short, all-lowercase names.
+>   Underscores can be used in the module name if it improves readability.
+> - Packages should also have short, all-lowercase names,
+>   although the use of underscores is discouraged.
+>
+> A more detailed guide on
+> [naming functions, modules, classes and variables](https://www.python.org/dev/peps/pep-0008/#package-and-module-names)
+> is available from PEP8.
+>
+{: .callout}
+
 ## Verifying Code Style Using Linters
 
 Knowing the rules of code formatting helps us avoid mistakes 
@@ -26,14 +97,14 @@ For Jupyter Lab, a number of linters (as well as other tools for improving the q
 your code) are available as part of a package called [`nbQA`](https://github.com/nbQA-dev/nbQA).
 Let's look at a very well-used one of these called `pylint`.
 
-First, let's ensure we are on the `style-fixes` branch once again.
+First, let's create a `style-fixes` git branch to keep our repository organized.
 
 ~~~
 $ git checkout style-fixes
 ~~~
 {: .language-bash}
 
-Make sure that you have activated your `venv` environment, and install the `nbQA` 
+Make sure that you have activated your `venv` environment, and then install the `nbQA` 
 package together with the supported tools:
 ~~~
 $ python -m pip install -U nbqa
@@ -252,7 +323,7 @@ style all over your code and make it much more readable.
 
 It is possible to automate these kind of code checks
 with GitHub's Continuous Integration service GitHub Actions -
-we will come back to automated linting in the episode on
-["Diagnosing Issues and Improving Robustness"](../24-diagnosing-issues-improving-robustness/index.html).
+you can read more on this in the 
+[materials of the previous workshops](https://shrra.github.io/python-intermediate-development/24-continuous-integration-automated-testing/index.html).
 
 {% include links.md %}
