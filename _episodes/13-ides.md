@@ -1,7 +1,7 @@
 ---
 title: "Integrated Software Development Environments"
 start: false
-teaching: 15
+teaching: 10
 exercises: 5
 questions:
 - "What are Integrated Development Environments (IDEs)?"
