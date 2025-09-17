@@ -1,7 +1,7 @@
 ---
 title: "Jupyter Magics and Resource Profiling"
 start: false
-teaching: 15
+teaching: 10
 exercises: 10
 questions:
 - "What is software profiling?"
