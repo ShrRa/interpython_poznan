@@ -11,13 +11,10 @@ objectives:
 - "Setting the scene and expectations"
 - "Making sure everyone has all the necessary software installed"
 keypoints:
-- "This lesson focuses on core, intermediate skills covering the whole software development life-cycle
-that will be of most use to anyone working collaboratively on code."
-- "For code development in teams - you need more than just the right tools and languages. You need a strategy
-(best practices) for how you'll use these tools as a team."
+- "This lesson focuses on core tools and practices for keeping your Jupyter Notebooks readable and maintainable."
 - "The lesson follows on from the novice Software Carpentry lesson, but this is not a prerequisite for
-attending as long as you have some basic Python, command line and Git skills and you have been using them for a
-while to write code to help with your work."
+attending as long as you have some basic Python and command line skills, and you have been using them for a
+while writing code to help with your work."
 ---
 
 ## Introduction
@@ -25,39 +22,15 @@ So, you have gained basic software development skills either by self-learning or
 e.g., a [novice Software Carpentry course][swc-lessons].
 You have been applying those skills for a while by writing code to help with your work
 and you feel comfortable developing code and troubleshooting problems.
-However, your software has now reached a point where there’s too much code to be kept in one script.
+However, your software has now reached a point where it is spread across multiple Notebooks with hundreds of cells
+in each.
 Perhaps it's involving more researchers (developers) and users,
 and more collaborative development effort is needed to add new functionality
 while ensuring previous development efforts remain functional and maintainable.
 
-This course provides the next step in software development -
-it teaches some **intermediate software engineering skills and best practices**
+This course provides an intro into skills and practices
 to help you restructure existing code and design more robust,
-reusable and maintainable code,
-automate the process of testing and verifying software correctness
-and support collaborations with others in a way that
-mimics a typical software development process within a team.
-
-The course uses a number of different **software development tools and techniques**
-interchangeably as you would in a real life.
-We had to make some choices about topics and tools to teach here,
-based on established best practices,
-ease of tool installation for the audience,
-length of the course and other considerations.
-Tools used here are not mandated though: 
-alternatives exist and we point some of them out along the way.
-Over time, you will develop a preference for certain tools and programming languages
-based on your personal taste
-or based on what is commonly used by your group, collaborators or community.
-However, the topics covered should give you a solid foundation for working on software development
-in a team and producing high quality software that is easier to develop
-and sustain in the future by yourself and others.
-Skills and tools taught here, while Python-specific,
-are transferable to other similar tools and programming languages.
-
-The course is organised into the following sections:
-
-![Course overview diagram](../fig/course-overview.png){: .image-with-shadow width="800px" }
+reusable, readable and maintainable code. 
 
 ### [Section 1: Setting up Software Environment](../10-section1-intro/index.html)
 In the first section we are going to set up our working environment
@@ -81,8 +54,6 @@ A few notes before we start.
 > and applying it to their own problems after gaining basic software development skills.
 > So, it is expected for you to have some prerequisite knowledge on the topics covered,
 > as outlined at the [beginning of the lesson](../index.html#prerequisites).
-> Check out this [quiz](../quiz/index.html) to help you test your prior knowledge
-> and determine if this course is for you.
 {: .callout}
 
 > ## Setup, Common Issues & Fixes
