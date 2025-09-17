@@ -1,8 +1,8 @@
 ---
 title: "Verifying Code Style Using Linters"
 start: false
-teaching: 15
-exercises: 10
+teaching: 10
+exercises: 5
 questions:
 - "What tools can help with maintaining a consistent code style?"
 - "How can we automate code style checking?"
