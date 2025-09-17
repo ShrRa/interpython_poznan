@@ -1,7 +1,7 @@
 ---
 title: "Introduction to Our Software Project"
 teaching: 10
-exercises: 5
+exercises: 0
 questions:
 - "What is the design architecture of our example software project?"
 - "Why is splitting code into smaller functional units (modules) good when designing software?"
